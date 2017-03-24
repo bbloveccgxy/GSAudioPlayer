@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84030C001E85026D00225307 /* GSLocalAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84030BFF1E85026D00225307 /* GSLocalAudioPlayer.swift */; };
+		84030C041E85040400225307 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84030C021E85040400225307 /* AudioToolbox.framework */; };
+		84030C051E85040400225307 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84030C031E85040400225307 /* AVFoundation.framework */; };
 		844C86B71E8276A4002FE473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C86B61E8276A4002FE473 /* AppDelegate.swift */; };
 		844C86B91E8276A4002FE473 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C86B81E8276A4002FE473 /* ViewController.swift */; };
 		844C86BC1E8276A4002FE473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844C86BA1E8276A4002FE473 /* Main.storyboard */; };
@@ -15,9 +18,15 @@
 		844C86CA1E82770C002FE473 /* GSAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C86C91E82770C002FE473 /* GSAudioPlayer.swift */; };
 		844C86CC1E8279C2002FE473 /* GSShortAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C86CB1E8279C1002FE473 /* GSShortAudioPlayer.swift */; };
 		844C86CE1E827A6F002FE473 /* GSAudioControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C86CD1E827A6F002FE473 /* GSAudioControl.swift */; };
+		84B95B501E8397AA00C38882 /* kakao.caf in Resources */ = {isa = PBXBuildFile; fileRef = 84B95B4F1E8397AA00C38882 /* kakao.caf */; };
+		84B95B521E83B34100C38882 /* GSAudioFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B95B511E83B34100C38882 /* GSAudioFileManager.swift */; };
+		84B95B541E83BE5B00C38882 /* GSAudioFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B95B531E83BE5B00C38882 /* GSAudioFileInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84030BFF1E85026D00225307 /* GSLocalAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSLocalAudioPlayer.swift; sourceTree = "<group>"; };
+		84030C021E85040400225307 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		84030C031E85040400225307 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		844C86B31E8276A4002FE473 /* GSAudioPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSAudioPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844C86B61E8276A4002FE473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844C86B81E8276A4002FE473 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +37,9 @@
 		844C86C91E82770C002FE473 /* GSAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSAudioPlayer.swift; sourceTree = "<group>"; };
 		844C86CB1E8279C1002FE473 /* GSShortAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSShortAudioPlayer.swift; sourceTree = "<group>"; };
 		844C86CD1E827A6F002FE473 /* GSAudioControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSAudioControl.swift; sourceTree = "<group>"; };
+		84B95B4F1E8397AA00C38882 /* kakao.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kakao.caf; sourceTree = "<group>"; };
+		84B95B511E83B34100C38882 /* GSAudioFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSAudioFileManager.swift; sourceTree = "<group>"; };
+		84B95B531E83BE5B00C38882 /* GSAudioFileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSAudioFileInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,18 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84030C041E85040400225307 /* AudioToolbox.framework in Frameworks */,
+				84030C051E85040400225307 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84030C011E85040400225307 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84030C021E85040400225307 /* AudioToolbox.framework */,
+				84030C031E85040400225307 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		844C86AA1E8276A4002FE473 = {
 			isa = PBXGroup;
 			children = (
 				844C86C81E8276EE002FE473 /* GSAudioPlayer */,
 				844C86B51E8276A4002FE473 /* GSAudioPlayerDemo */,
 				844C86B41E8276A4002FE473 /* Products */,
+				84030C011E85040400225307 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +85,7 @@
 		844C86B51E8276A4002FE473 /* GSAudioPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84B95B4F1E8397AA00C38882 /* kakao.caf */,
 				844C86B61E8276A4002FE473 /* AppDelegate.swift */,
 				844C86B81E8276A4002FE473 /* ViewController.swift */,
 				844C86BA1E8276A4002FE473 /* Main.storyboard */,
@@ -75,8 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				844C86C91E82770C002FE473 /* GSAudioPlayer.swift */,
+				84030BFF1E85026D00225307 /* GSLocalAudioPlayer.swift */,
 				844C86CB1E8279C1002FE473 /* GSShortAudioPlayer.swift */,
 				844C86CD1E827A6F002FE473 /* GSAudioControl.swift */,
+				84B95B511E83B34100C38882 /* GSAudioFileManager.swift */,
+				84B95B531E83BE5B00C38882 /* GSAudioFileInfo.swift */,
 			);
 			name = GSAudioPlayer;
 			path = ../GSAudioPlayer;
@@ -142,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B95B501E8397AA00C38882 /* kakao.caf in Resources */,
 				844C86C11E8276A4002FE473 /* LaunchScreen.storyboard in Resources */,
 				844C86BE1E8276A4002FE473 /* Assets.xcassets in Resources */,
 				844C86BC1E8276A4002FE473 /* Main.storyboard in Resources */,
@@ -156,10 +185,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				844C86CC1E8279C2002FE473 /* GSShortAudioPlayer.swift in Sources */,
+				84B95B541E83BE5B00C38882 /* GSAudioFileInfo.swift in Sources */,
 				844C86CA1E82770C002FE473 /* GSAudioPlayer.swift in Sources */,
+				84B95B521E83B34100C38882 /* GSAudioFileManager.swift in Sources */,
 				844C86CE1E827A6F002FE473 /* GSAudioControl.swift in Sources */,
 				844C86B91E8276A4002FE473 /* ViewController.swift in Sources */,
 				844C86B71E8276A4002FE473 /* AppDelegate.swift in Sources */,
+				84030C001E85026D00225307 /* GSLocalAudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
